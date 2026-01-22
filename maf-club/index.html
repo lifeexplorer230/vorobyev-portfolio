@@ -3,16 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Мафклуб для лидеров — игра в Мафию для предпринимателей. Развитие soft skills через захватывающую игру.">
-    <title>Мафклуб для лидеров | Игра в Мафию для предпринимателей</title>
+    <meta name="description" content="Мафия для предпринимателей в Москве — бизнес-клуб MafClub. Развитие soft skills, лидерства и навыков переговоров через захватывающую игру. Мастер-классы и нетворкинг.">
+    <meta name="keywords" content="мафия для предпринимателей, бизнес мафия Москва, игра мафия для лидеров, soft skills тренинг, нетворкинг предпринимателей, мафклуб">
+    <title>Мафия для предпринимателей в Москве | MafClub — бизнес-клуб</title>
 
     <link rel="canonical" href="https://moderator.top/maf-club/">
 
-    <meta property="og:title" content="Мафклуб для лидеров — игра в Мафию">
-    <meta property="og:description" content="Игра в Мафию для лидеров. Развитие soft skills через захватывающую игру.">
+    <!-- Geo tags -->
+    <meta name="geo.region" content="RU-MOW">
+    <meta name="geo.placename" content="Москва">
+    <meta name="geo.position" content="55.785;37.493">
+    <meta name="ICBM" content="55.785, 37.493">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Мафия для предпринимателей в Москве | MafClub">
+    <meta property="og:description" content="Бизнес-клуб для лидеров. Развитие soft skills, навыков переговоров и лидерства через игру в Мафию. Мастер-классы и нетворкинг.">
     <meta property="og:url" content="https://moderator.top/maf-club/">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="business.business">
     <meta property="og:locale" content="ru_RU">
+    <meta property="og:image" content="https://moderator.top/maf-club/images/maf20.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Мафия для предпринимателей в Москве | MafClub">
+    <meta name="twitter:description" content="Бизнес-клуб для лидеров. Развитие soft skills через игру в Мафию.">
+    <meta name="twitter:image" content="https://moderator.top/maf-club/images/maf20.jpeg">
 
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -94,16 +111,17 @@
         }
         .back-link:hover { color: white; }
 
-        .hero-label {
+        h1.hero-label {
             display: inline-block;
             background: var(--color-accent);
             padding: 8px 24px;
             border-radius: 30px;
-            font-size: 0.9em;
+            font-size: 1em;
+            font-weight: 500;
             margin-bottom: 30px;
         }
 
-        .hero h1 {
+        .hero-brand {
             font-size: 3em;
             font-weight: 700;
             margin-bottom: 20px;
@@ -538,7 +556,7 @@
 
         @media (max-width: 600px) {
             .hero { padding: 40px 20px 60px; }
-            .hero h1 { font-size: 2em; }
+            .hero-brand { font-size: 2em; }
             .section { padding: 40px 20px; }
             .section-title { font-size: 1.5em; }
             .schedule-item { flex-direction: column; gap: 10px; }
@@ -552,8 +570,8 @@
         <section class="hero">
             <div class="hero-content">
                 <a href="/" class="back-link">← На главную</a>
-                <div class="hero-label">Игра в Мафию для лидеров</div>
-                <h1>MafClub<br>.biz</h1>
+                <h1 class="hero-label">Мафия для предпринимателей в Москве</h1>
+                <div class="hero-brand">MafClub<br>.biz</div>
                 <p class="hero-date">20 декабря (Сб), 12:00-18:00</p>
                 <a href="https://t.me/sellersmafia" target="_blank" class="btn">Забронировать место</a>
             </div>
@@ -772,5 +790,47 @@
         ym(105445306, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
     </script>
     <noscript><div><img src="https://mc.yandex.ru/watch/105445306" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+    <!-- Schema.org LocalBusiness + Event -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "MafClub — Мафия для предпринимателей",
+        "description": "Бизнес-клуб для лидеров и предпринимателей. Игра в Мафию как инструмент развития soft skills, лидерства и навыков переговоров.",
+        "url": "https://moderator.top/maf-club/",
+        "telephone": "+7 916 527 4482",
+        "email": "info@mafclub.biz",
+        "image": "https://moderator.top/maf-club/images/maf20.jpeg",
+        "priceRange": "₽₽",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "ул. Народного Ополчения, 47, корп.1, стр.1",
+            "addressLocality": "Москва",
+            "addressRegion": "Москва",
+            "postalCode": "123154",
+            "addressCountry": "RU"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 55.785,
+            "longitude": 37.493
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Saturday"],
+            "opens": "12:00",
+            "closes": "18:00"
+        },
+        "sameAs": [
+            "https://t.me/sellersmafia"
+        ],
+        "areaServed": {
+            "@type": "City",
+            "name": "Москва"
+        },
+        "keywords": "мафия для предпринимателей, бизнес мафия, soft skills, лидерство, нетворкинг"
+    }
+    </script>
 </body>
 </html>
