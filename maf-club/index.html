@@ -186,14 +186,11 @@
             gap: 15px;
         }
 
-        .skill-icon {
-            font-size: 1.5em;
+        .skill-bullet {
+            color: var(--color-accent);
+            font-size: 0.8em;
             flex-shrink: 0;
-        }
-
-        .skill-icon img {
-            width: 32px;
-            height: 32px;
+            margin-top: 4px;
         }
 
         .skill-item strong {
@@ -275,6 +272,19 @@
             text-align: center;
         }
 
+        .location-slider {
+            max-width: 800px;
+            margin: 0 auto 30px;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .location-slider img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
         .location-card {
             background: white;
             padding: 40px;
@@ -348,6 +358,68 @@
             color: var(--color-text-light);
             font-size: 0.95em;
             margin-bottom: 20px;
+        }
+
+        /* Registration Form */
+        .form-section {
+            background: var(--color-bg);
+            border: 2px solid var(--pastel-purple);
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 40px;
+            border-radius: 20px;
+        }
+
+        .form-section input,
+        .form-section select {
+            width: 100%;
+            padding: 14px 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 1em;
+            margin-bottom: 15px;
+            font-family: inherit;
+        }
+
+        .form-section input:focus {
+            outline: none;
+            border-color: var(--color-accent);
+        }
+
+        .form-checkbox {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+            color: var(--color-text-light);
+        }
+
+        .form-checkbox input {
+            width: auto;
+            margin: 0;
+            margin-top: 3px;
+        }
+
+        .form-checkbox a {
+            color: var(--color-accent);
+        }
+
+        .form-btn {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, var(--color-accent), var(--color-accent-2));
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.05em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .form-btn:hover {
+            transform: translateY(-2px);
         }
 
         /* Team */
@@ -460,8 +532,8 @@
         <!-- Hero -->
         <section class="hero">
             <a href="/" class="back-link">← На главную</a>
-            <div class="hero-label">Мафклуб для лидеров</div>
-            <h1>Игра в Мафию для лидеров</h1>
+            <div class="hero-label">Игра в Мафию для лидеров</div>
+            <h1>MafClub.biz</h1>
             <p class="hero-date">20 декабря (Сб), 12:00-18:00</p>
             <a href="https://t.me/sellersmafia" target="_blank" class="btn">Забронировать место</a>
         </section>
@@ -495,23 +567,23 @@
             <p class="section-subtitle">Удовольствие, незабываемые эмоции и полигон для прокачки навыков:</p>
             <div class="skills-list">
                 <div class="skill-item">
-                    <span class="skill-icon"><img src="images/trophy_color.svg" alt=""></span>
+                    <span class="skill-bullet">●</span>
                     <div><strong>Убеждение и публичные выступления</strong> <span>— в ситуации 100% реализма с измеримым результатом</span></div>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-icon"><img src="images/eye_color.svg" alt=""></span>
+                    <span class="skill-bullet">●</span>
                     <div><strong>Чтение людей и мета-сообщения</strong> <span>— с моментальным фидбэком, что работает</span></div>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-icon"><img src="images/flexed_biceps_color.svg" alt=""></span>
+                    <span class="skill-bullet">●</span>
                     <div><strong>Лидерство и тимбилдинг</strong> <span>— как формальное (роли Дона, Шерифа), так и неформальное</span></div>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-icon"><img src="images/handshake_color.svg" alt=""></span>
+                    <span class="skill-bullet">●</span>
                     <div><strong>Управление чужими эмоциями и решениями</strong> <span>— от умения донести свою позицию до влияния на других</span></div>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-icon"><img src="images/bullseye_color.svg" alt=""></span>
+                    <span class="skill-bullet">●</span>
                     <div><strong>Аналитика</strong> <span>— в условиях человеческого фактора (не всё так просто)</span></div>
                 </div>
             </div>
@@ -568,6 +640,9 @@
         <!-- Location -->
         <section class="section location-section">
             <h2 class="section-title">Наш новый зал</h2>
+            <div class="location-slider">
+                <img src="images/5.jpg" alt="Зал Мафклуба">
+            </div>
             <div class="location-card">
                 <h3>📍 Москва</h3>
                 <p>ул. Народного Ополчения, 47, корп.1, стр.1</p>
@@ -594,6 +669,23 @@
             </div>
         </section>
 
+        <!-- Registration Form -->
+        <section class="section">
+            <h2 class="section-title">Регистрация</h2>
+            <div class="form-section">
+                <form id="registrationForm">
+                    <input type="text" name="name" placeholder="Имя" required>
+                    <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    <input type="email" name="email" placeholder="Почта" required>
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="consent" required>
+                        <label for="consent">Согласен с <a href="http://mafclub.biz/page89827556.html" target="_blank">публичной офертой</a> и <a href="https://mafclub.biz/page89841146.html" target="_blank">политикой обработки данных</a></label>
+                    </div>
+                    <button type="submit" class="form-btn">Забронировать место</button>
+                </form>
+            </div>
+        </section>
+
         <!-- Team -->
         <section class="section">
             <h2 class="section-title">Команда</h2>
@@ -604,17 +696,17 @@
                     <p>Тренер и ведущий игры, основатель клуба</p>
                 </div>
                 <div class="team-member">
-                    <div class="team-avatar"><img src="images/team_photo1.jpg" alt="Ольга"></div>
+                    <div class="team-avatar"><img src="images/team_photo2.jpg" alt="Ольга"></div>
                     <h4>Ольга</h4>
                     <p>Служба заботы</p>
                 </div>
                 <div class="team-member">
-                    <div class="team-avatar"><img src="images/team_photo2.jpg" alt="Егор"></div>
+                    <div class="team-avatar"><img src="images/IMAGE_2025-10-27_230.jpg" alt="Егор"></div>
                     <h4>Егор</h4>
                     <p>Ведущий игры</p>
                 </div>
                 <div class="team-member">
-                    <div class="team-avatar"><img src="images/team_photo3.jpg" alt="Егор"></div>
+                    <div class="team-avatar"><img src="images/_.jpg" alt="Егор"></div>
                     <h4>Егор</h4>
                     <p>Тренер</p>
                 </div>
