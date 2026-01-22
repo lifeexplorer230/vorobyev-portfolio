@@ -202,68 +202,62 @@
             font-size: 0.95em;
         }
 
-        /* Schedule */
-        .schedule-list {
-            max-width: 700px;
+        /* Schedule - Horizontal 4 columns */
+        .schedule-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
         .schedule-item {
-            display: flex;
-            gap: 25px;
-            padding: 25px 0;
-            border-bottom: 1px solid #eee;
+            text-align: center;
+            padding: 20px 15px;
         }
 
-        .schedule-item:last-child { border-bottom: none; }
-
         .schedule-time {
-            font-size: 1.3em;
+            font-size: 1.2em;
             font-weight: 700;
             color: var(--color-accent);
-            min-width: 100px;
+            margin-bottom: 15px;
         }
 
         .schedule-content h4 {
-            font-size: 1.1em;
-            margin-bottom: 8px;
+            font-size: 1em;
+            margin-bottom: 10px;
         }
 
         .schedule-content p {
             color: var(--color-text-light);
-            font-size: 0.95em;
+            font-size: 0.85em;
+            line-height: 1.5;
         }
 
-        /* Gallery */
+        @media (max-width: 800px) {
+            .schedule-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 500px) {
+            .schedule-grid { grid-template-columns: 1fr; }
+        }
+
+        /* Gallery - Single large banner */
         .gallery-section {
             background: var(--color-bg);
+            padding: 0;
         }
 
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-        }
-
-        .gallery-item {
-            border-radius: 12px;
+        .gallery-banner {
+            width: 100%;
+            max-height: 500px;
             overflow: hidden;
-            aspect-ratio: 4/3;
         }
 
-        .gallery-item img {
+        .gallery-banner img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.3s;
-        }
-
-        .gallery-item:hover img {
-            transform: scale(1.05);
-        }
-
-        @media (max-width: 600px) {
-            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
         /* Location */
@@ -533,7 +527,7 @@
         <section class="hero">
             <a href="/" class="back-link">← На главную</a>
             <div class="hero-label">Игра в Мафию для лидеров</div>
-            <h1>MafClub.biz</h1>
+            <h1>MafClub<br>.biz</h1>
             <p class="hero-date">20 декабря (Сб), 12:00-18:00</p>
             <a href="https://t.me/sellersmafia" target="_blank" class="btn">Забронировать место</a>
         </section>
@@ -592,7 +586,7 @@
         <!-- Schedule -->
         <section class="section">
             <h2 class="section-title">Как это происходит</h2>
-            <div class="schedule-list">
+            <div class="schedule-grid">
                 <div class="schedule-item">
                     <div class="schedule-time">12:00</div>
                     <div class="schedule-content">
@@ -624,16 +618,10 @@
             </div>
         </section>
 
-        <!-- Gallery -->
-        <section class="section gallery-section">
-            <h2 class="section-title">Как это выглядит</h2>
-            <div class="gallery-grid">
-                <div class="gallery-item"><img src="images/1.jpeg" alt="Мафклуб"></div>
-                <div class="gallery-item"><img src="images/2.jpeg" alt="Мафклуб"></div>
-                <div class="gallery-item"><img src="images/3.jpg" alt="Мафклуб"></div>
-                <div class="gallery-item"><img src="images/4.jpeg" alt="Мафклуб"></div>
-                <div class="gallery-item"><img src="images/5.jpg" alt="Мафклуб"></div>
-                <div class="gallery-item"><img src="images/6.jpeg" alt="Мафклуб"></div>
+        <!-- Gallery Banner -->
+        <section class="gallery-section">
+            <div class="gallery-banner">
+                <img src="images/1.jpeg" alt="Мафклуб - игра">
             </div>
         </section>
 
