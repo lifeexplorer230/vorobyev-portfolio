@@ -3,189 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Маф Клуб — игра в Мафию для лидеров и предпринимателей. Развитие soft skills через захватывающую игру.">
-    <title>Маф Клуб — игра в Мафию для лидеров | Роман Воробьёв</title>
+    <meta name="description" content="Мафклуб для лидеров — игра в Мафию для предпринимателей. Развитие soft skills через захватывающую игру.">
+    <title>Мафклуб для лидеров | Игра в Мафию для предпринимателей</title>
 
-    <!-- Canonical -->
     <link rel="canonical" href="https://moderator.top/maf-club/">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Маф Клуб — игра в Мафию для лидеров">
-    <meta property="og:description" content="Развитие soft skills через захватывающую игру в Мафию. Убеждение, лидерство, аналитика.">
+    <meta property="og:title" content="Мафклуб для лидеров — игра в Мафию">
+    <meta property="og:description" content="Игра в Мафию для лидеров. Развитие soft skills через захватывающую игру.">
     <meta property="og:url" content="https://moderator.top/maf-club/">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="ru_RU">
 
-    <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
-    <!-- Fonts -->
     <link rel="stylesheet" href="../css/fonts.css">
 
     <style>
         :root {
-            --color-text-primary: #1a1a1a;
-            --color-text-secondary: #666666;
-            --color-bg-primary: #ffffff;
-            --color-bg-secondary: #f5f5f5;
-            --color-accent-pink: #ff6b9d;
+            --color-primary: #1a1a2e;
+            --color-primary-light: #16213e;
+            --color-accent: #8b7dff;
+            --color-accent-2: #6b9dff;
             --color-accent-green: #22c55e;
-            --color-accent-blue: #6b9dff;
-            --color-accent-orange: #ffb86b;
-            --color-accent-purple: #8b7dff;
-            --color-pastel-green: #f0f7f0;
-            --color-pastel-purple: #f0f0f7;
-            --color-pastel-pink: #fff0f7;
-            --color-pastel-orange: #fffaf0;
-            --color-pastel-blue: #f0f7f7;
-            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
-            --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
-            --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.04);
-            --shadow-xl: 0 8px 16px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.06);
+            --color-accent-pink: #ff6b9d;
+            --color-text: #1a1a1a;
+            --color-text-light: #666666;
+            --color-bg: #ffffff;
+            --color-bg-light: #f5f5f5;
+            --pastel-purple: #f0f0f7;
+            --pastel-blue: #f0f7f7;
+            --pastel-green: #f0f7f0;
+            --pastel-pink: #fff0f7;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: 'Onest', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            line-height: 1.7;
-            color: var(--color-text-primary);
-            background-color: #fafafa;
-            -webkit-font-smoothing: antialiased;
+            font-family: 'Onest', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--color-text);
+            background: var(--color-bg-light);
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
-            background: var(--color-bg-primary);
-            box-shadow: var(--shadow-lg);
+            background: var(--color-bg);
         }
 
-        /* Hero Section */
+        /* Hero */
         .hero {
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
             color: white;
-            padding: 80px 40px;
+            padding: 60px 40px 80px;
             text-align: center;
-            position: relative;
-            overflow: hidden;
         }
 
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-            opacity: 0.5;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-badge {
+        .back-link {
             display: inline-block;
-            background: linear-gradient(135deg, var(--color-accent-purple), var(--color-accent-blue));
-            padding: 8px 20px;
-            border-radius: 20px;
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            margin-bottom: 40px;
             font-size: 0.9em;
-            margin-bottom: 20px;
-            font-weight: 500;
+        }
+        .back-link:hover { color: white; }
+
+        .hero-label {
+            display: inline-block;
+            background: var(--color-accent);
+            padding: 8px 24px;
+            border-radius: 30px;
+            font-size: 0.9em;
+            margin-bottom: 30px;
         }
 
         .hero h1 {
-            font-size: 3.5em;
-            margin-bottom: 20px;
+            font-size: 3em;
             font-weight: 700;
-            letter-spacing: -1px;
+            margin-bottom: 20px;
         }
 
-        .hero h1 span {
-            background: linear-gradient(135deg, var(--color-accent-purple), var(--color-accent-pink));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero-subtitle {
+        .hero-date {
             font-size: 1.3em;
+            margin-bottom: 35px;
             opacity: 0.9;
-            margin-bottom: 30px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
         }
 
-        .cta-btn {
+        .btn {
             display: inline-block;
-            background: linear-gradient(135deg, var(--color-accent-green), var(--color-accent-blue));
+            background: linear-gradient(135deg, var(--color-accent-green), var(--color-accent-2));
             color: white;
-            padding: 18px 40px;
-            border-radius: 12px;
+            padding: 16px 40px;
+            border-radius: 10px;
             text-decoration: none;
-            font-size: 1.1em;
             font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: var(--shadow-lg);
+            font-size: 1.05em;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
 
-        .cta-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-xl);
-        }
-
-        /* Section Styles */
+        /* Sections */
         .section {
-            padding: 70px 40px;
+            padding: 60px 40px;
         }
 
         .section-title {
-            font-size: 2.2em;
+            font-size: 1.8em;
             text-align: center;
-            margin-bottom: 50px;
-            color: var(--color-text-primary);
-            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--color-text);
         }
 
-        .section-title span {
-            background: linear-gradient(135deg, var(--color-accent-purple), var(--color-accent-blue));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+        .section-subtitle {
+            text-align: center;
+            color: var(--color-text-light);
+            margin-bottom: 40px;
+            font-size: 1.1em;
         }
 
-        /* Benefits Grid */
+        /* Benefits */
+        .benefits {
+            background: var(--pastel-purple);
+        }
+
         .benefits-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 30px;
         }
 
         .benefit-card {
-            padding: 35px 30px;
+            background: white;
+            padding: 30px;
             border-radius: 16px;
             text-align: center;
-            transition: all 0.3s ease;
-            box-shadow: var(--shadow-sm);
         }
-
-        .benefit-card:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .benefit-card:nth-child(1) { background: var(--color-pastel-pink); }
-        .benefit-card:nth-child(2) { background: var(--color-pastel-purple); }
-        .benefit-card:nth-child(3) { background: var(--color-pastel-green); }
 
         .benefit-icon {
             font-size: 3em;
@@ -193,171 +148,168 @@
         }
 
         .benefit-card h3 {
-            font-size: 1.3em;
+            font-size: 1.2em;
             margin-bottom: 15px;
-            color: var(--color-text-primary);
+            color: var(--color-accent);
         }
 
         .benefit-card p {
-            color: var(--color-text-secondary);
+            color: var(--color-text-light);
+            font-size: 0.95em;
             line-height: 1.7;
         }
 
-        /* Skills Section */
+        /* Skills */
         .skills-section {
-            background: linear-gradient(135deg, var(--color-pastel-blue) 0%, var(--color-pastel-purple) 100%);
+            background: var(--pastel-blue);
         }
 
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+        .skills-list {
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .skill-item {
             background: white;
-            padding: 25px;
+            padding: 20px 25px;
             border-radius: 12px;
+            margin-bottom: 15px;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 15px;
-            box-shadow: var(--shadow-sm);
-            transition: all 0.3s ease;
-        }
-
-        .skill-item:hover {
-            transform: translateX(5px);
-            box-shadow: var(--shadow-md);
         }
 
         .skill-icon {
-            width: 50px;
-            height: 50px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             font-size: 1.5em;
             flex-shrink: 0;
         }
 
-        .skill-item:nth-child(1) .skill-icon { background: var(--color-pastel-pink); }
-        .skill-item:nth-child(2) .skill-icon { background: var(--color-pastel-purple); }
-        .skill-item:nth-child(3) .skill-icon { background: var(--color-pastel-green); }
-        .skill-item:nth-child(4) .skill-icon { background: var(--color-pastel-orange); }
-        .skill-item:nth-child(5) .skill-icon { background: var(--color-pastel-blue); }
-
-        .skill-item span {
-            font-weight: 500;
-            color: var(--color-text-primary);
+        .skill-item strong {
+            color: var(--color-text);
         }
 
-        /* Schedule Section */
+        .skill-item span {
+            color: var(--color-text-light);
+            font-size: 0.95em;
+        }
+
+        /* Schedule */
         .schedule-list {
-            max-width: 600px;
+            max-width: 700px;
             margin: 0 auto;
         }
 
         .schedule-item {
             display: flex;
-            gap: 20px;
+            gap: 25px;
             padding: 25px 0;
             border-bottom: 1px solid #eee;
         }
 
-        .schedule-item:last-child {
-            border-bottom: none;
-        }
+        .schedule-item:last-child { border-bottom: none; }
 
         .schedule-time {
-            font-size: 1.2em;
+            font-size: 1.3em;
             font-weight: 700;
-            color: var(--color-accent-purple);
-            min-width: 80px;
+            color: var(--color-accent);
+            min-width: 100px;
         }
 
-        .schedule-desc h4 {
+        .schedule-content h4 {
             font-size: 1.1em;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
         }
 
-        .schedule-desc p {
-            color: var(--color-text-secondary);
+        .schedule-content p {
+            color: var(--color-text-light);
             font-size: 0.95em;
-        }
-
-        /* Pricing Section */
-        .pricing-section {
-            background: linear-gradient(135deg, var(--color-pastel-purple) 0%, var(--color-pastel-pink) 100%);
-        }
-
-        .pricing-card {
-            background: white;
-            border-radius: 20px;
-            padding: 40px;
-            max-width: 500px;
-            margin: 0 auto;
-            text-align: center;
-            box-shadow: var(--shadow-lg);
-        }
-
-        .pricing-card h3 {
-            font-size: 1.5em;
-            margin-bottom: 20px;
-        }
-
-        .price {
-            font-size: 3em;
-            font-weight: 700;
-            background: linear-gradient(135deg, var(--color-accent-purple), var(--color-accent-blue));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .price-old {
-            font-size: 1.2em;
-            color: var(--color-text-secondary);
-            text-decoration: line-through;
-            margin-left: 10px;
-        }
-
-        .price-note {
-            color: var(--color-accent-green);
-            font-weight: 500;
-            margin: 15px 0 25px;
         }
 
         /* Location */
         .location-section {
+            background: var(--pastel-green);
             text-align: center;
         }
 
         .location-card {
-            background: var(--color-pastel-green);
+            background: white;
             padding: 40px;
             border-radius: 16px;
-            max-width: 600px;
+            max-width: 500px;
             margin: 0 auto;
         }
 
         .location-card h3 {
-            font-size: 1.3em;
+            font-size: 1.4em;
             margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
+            color: var(--color-accent);
         }
 
         .location-card p {
-            color: var(--color-text-secondary);
+            color: var(--color-text-light);
         }
 
-        /* Team Section */
+        .location-card .metro {
+            color: var(--color-accent-green);
+            font-weight: 500;
+            margin-top: 10px;
+        }
+
+        /* Pricing */
+        .pricing-section {
+            background: linear-gradient(135deg, var(--pastel-purple), var(--pastel-pink));
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .pricing-card {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .pricing-card h3 {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+        }
+
+        .price-old {
+            font-size: 1.2em;
+            color: var(--color-text-light);
+            text-decoration: line-through;
+        }
+
+        .price-new {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: var(--color-accent);
+            display: block;
+            margin: 10px 0;
+        }
+
+        .price-note {
+            color: var(--color-accent-green);
+            font-size: 0.9em;
+            margin-bottom: 25px;
+        }
+
+        .pricing-card p {
+            color: var(--color-text-light);
+            font-size: 0.95em;
+            margin-bottom: 20px;
+        }
+
+        /* Team */
         .team-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-template-columns: repeat(4, 1fr);
             gap: 30px;
             max-width: 900px;
             margin: 0 auto;
@@ -368,16 +320,15 @@
         }
 
         .team-avatar {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
-            background: linear-gradient(135deg, var(--color-pastel-purple), var(--color-pastel-blue));
-            margin: 0 auto 20px;
+            background: linear-gradient(135deg, var(--pastel-purple), var(--pastel-blue));
+            margin: 0 auto 15px;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 3em;
-            box-shadow: var(--shadow-md);
+            font-size: 2.5em;
         }
 
         .team-member h4 {
@@ -386,100 +337,70 @@
         }
 
         .team-member p {
-            color: var(--color-text-secondary);
+            color: var(--color-text-light);
             font-size: 0.9em;
         }
 
-        /* Contact Section */
+        /* Contact */
         .contact-section {
-            background: var(--color-bg-secondary);
+            background: var(--color-bg-light);
             text-align: center;
         }
 
-        .contact-info {
+        .contact-grid {
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
-            gap: 40px;
+            gap: 50px;
             margin-bottom: 30px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 10px;
+            flex-wrap: wrap;
         }
 
         .contact-item a {
-            color: var(--color-accent-purple);
+            color: var(--color-accent);
             text-decoration: none;
-            font-weight: 500;
+            font-size: 1.1em;
         }
 
-        .contact-item a:hover {
-            text-decoration: underline;
-        }
+        .contact-item a:hover { text-decoration: underline; }
 
         /* Footer */
         footer {
-            background: var(--color-bg-secondary);
-            color: var(--color-text-secondary);
+            background: var(--color-primary);
+            color: rgba(255,255,255,0.7);
+            padding: 40px;
             text-align: center;
-            padding: 30px 20px;
             font-size: 0.9em;
         }
 
         footer a {
-            color: var(--color-accent-purple);
+            color: rgba(255,255,255,0.9);
             text-decoration: none;
         }
 
-        /* Back Link */
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            color: rgba(255,255,255,0.8);
-            text-decoration: none;
-            margin-bottom: 30px;
-            font-size: 0.95em;
-            transition: color 0.3s;
+        footer a:hover { text-decoration: underline; }
+
+        .legal-links {
+            margin-top: 20px;
         }
 
-        .back-link:hover {
-            color: white;
+        .legal-links a {
+            margin: 0 15px;
         }
 
         /* Responsive */
-        @media (max-width: 768px) {
-            .hero {
-                padding: 60px 25px;
-            }
+        @media (max-width: 900px) {
+            .benefits-grid { grid-template-columns: 1fr; }
+            .pricing-grid { grid-template-columns: 1fr; }
+            .team-grid { grid-template-columns: repeat(2, 1fr); }
+        }
 
-            .hero h1 {
-                font-size: 2.2em;
-            }
-
-            .hero-subtitle {
-                font-size: 1.1em;
-            }
-
-            .section {
-                padding: 50px 25px;
-            }
-
-            .section-title {
-                font-size: 1.7em;
-            }
-
-            .benefits-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .schedule-item {
-                flex-direction: column;
-                gap: 10px;
-            }
+        @media (max-width: 600px) {
+            .hero { padding: 40px 20px 60px; }
+            .hero h1 { font-size: 2em; }
+            .section { padding: 40px 20px; }
+            .section-title { font-size: 1.5em; }
+            .schedule-item { flex-direction: column; gap: 10px; }
+            .team-grid { grid-template-columns: 1fr 1fr; }
         }
     </style>
 </head>
@@ -487,94 +408,94 @@
     <div class="container">
         <!-- Hero -->
         <section class="hero">
-            <div class="hero-content">
-                <a href="/" class="back-link">← Вернуться на главную</a>
-                <div class="hero-badge">Маф Клуб предпринимателей</div>
-                <h1>Игра в <span>Мафию</span> для лидеров</h1>
-                <p class="hero-subtitle">Развивайте soft skills через захватывающую игру: убеждение, лидерство, аналитика в условиях неопределённости</p>
-                <a href="https://t.me/sellersmafia" target="_blank" class="cta-btn">Записаться в Telegram</a>
-            </div>
+            <a href="/" class="back-link">← На главную</a>
+            <div class="hero-label">Мафклуб для лидеров</div>
+            <h1>Игра в Мафию для лидеров</h1>
+            <p class="hero-date">20 декабря (Сб), 12:00-18:00</p>
+            <a href="https://t.me/sellersmafia" target="_blank" class="btn">Забронировать место</a>
         </section>
 
         <!-- Benefits -->
-        <section class="section">
-            <h2 class="section-title">Почему у нас вы <span>реально кайфанёте</span></h2>
+        <section class="section benefits">
+            <h2 class="section-title">Почему у нас вы реально кайфанёте</h2>
+            <p class="section-subtitle">Забудьте всё что вы знали о Мафии. Вот как это будет:</p>
             <div class="benefits-grid">
                 <div class="benefit-card">
                     <div class="benefit-icon">🔥</div>
                     <h3>Реальный адреналин</h3>
-                    <p>Строгие правила и профессиональный ведущий создают полное вовлечение. Здесь нет места скуке — каждая минута на счету.</p>
+                    <p>Строгие правила и профессиональный ведущий создают контекст, в котором вы вовлечены на 100%. Игра становится для вас жизнью, а роль – миссией.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">🤝</div>
                     <h3>Деролинг и дружественная среда</h3>
-                    <p>Чёткое разделение игровых действий и реальных отношений. После игры — друзья, во время игры — соперники.</p>
+                    <p>Деролинг разделяет ваши действия в игре и отношения вне её, чтобы сохранять дружескую теплоту и укреплять связи. А осознанный переход через эту границу тренирует важный управленческий скилл и позволяет полностью отрываться в игре.</p>
                 </div>
                 <div class="benefit-card">
                     <div class="benefit-icon">🎯</div>
-                    <h3>Развлечение + софт-скиллы</h3>
-                    <p>Захватывающие повороты сюжета плюс дебрифинг для выявления слепых зон в коммуникации и принятии решений.</p>
+                    <h3>Развлечение и софтскиллз</h3>
+                    <p>Захватывающие повороты, адреналин и 100% вовлечённость дарят отличный отдых. А дебрифинг между играми выявляет личные слепые зоны и прокачивает ключевые навыки.</p>
                 </div>
             </div>
         </section>
 
         <!-- Skills -->
         <section class="section skills-section">
-            <h2 class="section-title">Что вы <span>прокачаете</span></h2>
-            <div class="skills-grid">
+            <h2 class="section-title">Вы получите</h2>
+            <p class="section-subtitle">Удовольствие, незабываемые эмоции и полигон для прокачки навыков:</p>
+            <div class="skills-list">
                 <div class="skill-item">
-                    <div class="skill-icon">🎤</div>
-                    <span>Убеждение и публичные выступления</span>
+                    <span class="skill-icon">🎤</span>
+                    <div><strong>Убеждение и публичные выступления</strong> <span>— в ситуации 100% реализма с измеримым результатом</span></div>
                 </div>
                 <div class="skill-item">
-                    <div class="skill-icon">👁️</div>
-                    <span>Чтение людей и мета-сообщения</span>
+                    <span class="skill-icon">👁️</span>
+                    <div><strong>Чтение людей и мета-сообщения</strong> <span>— с моментальным фидбэком, что работает</span></div>
                 </div>
                 <div class="skill-item">
-                    <div class="skill-icon">👑</div>
-                    <span>Лидерство и тимбилдинг</span>
+                    <span class="skill-icon">👑</span>
+                    <div><strong>Лидерство и тимбилдинг</strong> <span>— как формальное (роли Дона, Шерифа), так и неформальное</span></div>
                 </div>
                 <div class="skill-item">
-                    <div class="skill-icon">💫</div>
-                    <span>Управление чужими эмоциями</span>
+                    <span class="skill-icon">💫</span>
+                    <div><strong>Управление чужими эмоциями и решениями</strong> <span>— от умения донести свою позицию до влияния на других</span></div>
                 </div>
                 <div class="skill-item">
-                    <div class="skill-icon">📊</div>
-                    <span>Аналитика в условиях неопределённости</span>
+                    <span class="skill-icon">📊</span>
+                    <div><strong>Аналитика</strong> <span>— в условиях человеческого фактора (не всё так просто)</span></div>
                 </div>
             </div>
         </section>
 
         <!-- Schedule -->
         <section class="section">
-            <h2 class="section-title">Как проходит <span>игровой день</span></h2>
+            <h2 class="section-title">Как это происходит</h2>
             <div class="schedule-list">
                 <div class="schedule-item">
                     <div class="schedule-time">12:00</div>
-                    <div class="schedule-desc">
-                        <h4>Мастер-класс и знакомство</h4>
-                        <p>Знакомимся, настраиваемся на игру</p>
+                    <div class="schedule-content">
+                        <h4>Мастер-класс и общение</h4>
+                        <p>Разбор кейсов по самым трендовым бизнес-темам, знакомство, общение.</p>
                     </div>
                 </div>
                 <div class="schedule-item">
                     <div class="schedule-time">12:45</div>
-                    <div class="schedule-desc">
-                        <h4>Вводный тренинг</h4>
-                        <p>Правила, стратегии, психология игры</p>
+                    <div class="schedule-content">
+                        <h4>Как вырасти за игру</h4>
+                        <p>Вводный тренинг: приёмы, создающие ваш лидерский рост как в игре, так и в бизнес-коммуникации.</p>
                     </div>
                 </div>
                 <div class="schedule-item">
-                    <div class="schedule-time">13:00</div>
-                    <div class="schedule-desc">
-                        <h4>3-4 игры с дебрифингом</h4>
-                        <p>Играем, анализируем, учимся на ошибках</p>
+                    <div class="schedule-time">13:00–18:00</div>
+                    <div class="schedule-content">
+                        <h4>3-4 игры в Мафию</h4>
+                        <p>Вы сыграете ~3 игры, каждая из которых покажется вам маленькой жизнью. Для вылетевших раньше – мастер-майнд на бизнес-кухне.</p>
                     </div>
                 </div>
                 <div class="schedule-item">
-                    <div class="schedule-time">18:00</div>
-                    <div class="schedule-desc">
-                        <h4>Завершение</h4>
-                        <p>Итоги дня, нетворкинг</p>
+                    <div class="schedule-time">10 мин</div>
+                    <div class="schedule-content">
+                        <h4>Дебриф после каждой игры</h4>
+                        <p>Что нужно делать по-другому именно вам в следующей игре (и жизни), чтобы результаты были лучше.</p>
                     </div>
                 </div>
             </div>
@@ -582,39 +503,41 @@
 
         <!-- Location -->
         <section class="section location-section">
-            <h2 class="section-title">Где проходит</h2>
+            <h2 class="section-title">Наш новый зал</h2>
             <div class="location-card">
                 <h3>📍 Москва</h3>
                 <p>ул. Народного Ополчения, 47, корп.1, стр.1</p>
-                <p style="margin-top: 10px; color: var(--color-accent-purple);">м. Октябрьское Поле</p>
+                <p class="metro">м. Октябрьское Поле</p>
             </div>
         </section>
 
         <!-- Pricing -->
         <section class="section pricing-section">
-            <h2 class="section-title">Стоимость участия</h2>
-            <div class="pricing-card">
-                <h3>Игра + мастер-класс</h3>
-                <div>
-                    <span class="price">4 900 ₽</span>
-                    <span class="price-old">6 500 ₽</span>
+            <h2 class="section-title">Забронируйте место</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Игра + мастер-класс</h3>
+                    <span class="price-old">6 500 руб</span>
+                    <span class="price-new">4 900 ₽</span>
+                    <p class="price-note">Скидка до 12 декабря</p>
+                    <a href="https://t.me/sellersmafia" target="_blank" class="btn">Принять участие</a>
                 </div>
-                <p class="price-note">Скидка при раннем бронировании</p>
-                <a href="https://t.me/sellersmafia" target="_blank" class="cta-btn">Забронировать место</a>
-                <p style="margin-top: 25px; color: var(--color-text-secondary); font-size: 0.9em;">
-                    Корпоративные мероприятия: от 10 до 60 человек
-                </p>
+                <div class="pricing-card">
+                    <h3>Корпоратив</h3>
+                    <p style="margin-top: 20px;">От 10 до 60 человек (несколько столов), от 3 часов до 3 дней</p>
+                    <a href="https://t.me/sellersmafia" target="_blank" class="btn" style="margin-top: 20px;">Узнать стоимость</a>
+                </div>
             </div>
         </section>
 
         <!-- Team -->
         <section class="section">
-            <h2 class="section-title">Наша <span>команда</span></h2>
+            <h2 class="section-title">Команда</h2>
             <div class="team-grid">
                 <div class="team-member">
                     <div class="team-avatar">👨‍💼</div>
                     <h4>Роман</h4>
-                    <p>Основатель, тренер</p>
+                    <p>Тренер и ведущий игры, основатель клуба</p>
                 </div>
                 <div class="team-member">
                     <div class="team-avatar">👩‍💼</div>
@@ -624,7 +547,7 @@
                 <div class="team-member">
                     <div class="team-avatar">🎭</div>
                     <h4>Егор</h4>
-                    <p>Ведущий</p>
+                    <p>Ведущий игры</p>
                 </div>
                 <div class="team-member">
                     <div class="team-avatar">🎯</div>
@@ -637,27 +560,27 @@
         <!-- Contact -->
         <section class="section contact-section">
             <h2 class="section-title">Контакты</h2>
-            <div class="contact-info">
+            <div class="contact-grid">
                 <div class="contact-item">
                     📱 <a href="tel:+79165274482">+7 916 527 4482</a>
                 </div>
                 <div class="contact-item">
                     ✉️ <a href="mailto:info@mafclub.biz">info@mafclub.biz</a>
                 </div>
-                <div class="contact-item">
-                    💬 <a href="https://t.me/sellersmafia" target="_blank">@sellersmafia</a>
-                </div>
             </div>
-            <a href="https://t.me/sellersmafia" target="_blank" class="cta-btn">Написать в Telegram</a>
+            <a href="https://t.me/sellersmafia" target="_blank" class="btn">Написать в Telegram</a>
         </section>
 
         <!-- Footer -->
         <footer>
-            <p>ИП Воробьев Роман Юрьевич | ОГРНИП 315774600419831</p>
-            <p style="margin-top: 10px;">
-                <a href="/privacy/">Политика конфиденциальности</a>
-            </p>
-            <p style="margin-top: 15px;">© 2024 Маф Клуб. Все права защищены.</p>
+            <p><strong>ИП Воробьев Роман Юрьевич</strong></p>
+            <p>ОГРНИП 315774600419831 | ИНН 771470569873</p>
+            <p style="margin-top: 10px;">Москва, ул. Народного Ополчения, 47, корп.1, стр.1</p>
+            <div class="legal-links">
+                <a href="http://mafclub.biz/page89827556.html" target="_blank">Публичная оферта</a>
+                <a href="https://mafclub.biz/page89841146.html" target="_blank">Соглашение о персональных данных</a>
+            </div>
+            <p style="margin-top: 20px;">© 2024 Мафклуб. Все права защищены.</p>
         </footer>
     </div>
 
