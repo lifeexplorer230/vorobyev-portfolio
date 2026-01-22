@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Маф Клуб — игра в Мафию для лидеров и предпринимателей. Развитие soft skills через захватывающую игру.">
+    <title>Маф Клуб — игра в Мафию для лидеров | Роман Воробьёв</title>
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://moderator.top/maf-club/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Маф Клуб — игра в Мафию для лидеров">
+    <meta property="og:description" content="Развитие soft skills через захватывающую игру в Мафию. Убеждение, лидерство, аналитика.">
+    <meta property="og:url" content="https://moderator.top/maf-club/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="../css/fonts.css">
+
+    <style>
+        :root {
+            --color-text-primary: #1a1a1a;
+            --color-text-secondary: #666666;
+            --color-bg-primary: #ffffff;
+            --color-bg-secondary: #f5f5f5;
+            --color-accent-pink: #ff6b9d;
+            --color-accent-green: #22c55e;
+            --color-accent-blue: #6b9dff;
+            --color-accent-orange: #ffb86b;
+            --color-accent-purple: #8b7dff;
+            --color-pastel-green: #f0f7f0;
+            --color-pastel-purple: #f0f0f7;
+            --color-pastel-pink: #fff0f7;
+            --color-pastel-orange: #fffaf0;
+            --color-pastel-blue: #f0f7f7;
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+            --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.04);
+            --shadow-xl: 0 8px 16px rgba(0, 0, 0, 0.08), 0 4px 8px rgba(0, 0, 0, 0.06);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Onest', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.7;
+            color: var(--color-text-primary);
+            background-color: #fafafa;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--color-bg-primary);
+            box-shadow: var(--shadow-lg);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            color: white;
+            padding: 80px 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            opacity: 0.5;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--color-accent-purple), var(--color-accent-blue));
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .hero h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: -1px;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, var(--color-accent-purple), var(--color-accent-pink));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3em;
+            opacity: 0.9;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--color-accent-green), var(--color-accent-blue));
+            color: white;
+            padding: 18px 40px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 70px 40px;
+        }
+
+        .section-title {
+            font-size: 2.2em;
+            text-align: center;
+            margin-bottom: 50px;
+            color: var(--color-text-primary);
+            font-weight: 600;
+        }
+
+        .section-title span {
+            background: linear-gradient(135deg, var(--color-accent-purple), var(--color-accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Benefits Grid */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .benefit-card {
+            padding: 35px 30px;
+            border-radius: 16px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .benefit-card:nth-child(1) { background: var(--color-pastel-pink); }
+        .benefit-card:nth-child(2) { background: var(--color-pastel-purple); }
+        .benefit-card:nth-child(3) { background: var(--color-pastel-green); }
+
+        .benefit-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .benefit-card h3 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            color: var(--color-text-primary);
+        }
+
+        .benefit-card p {
+            color: var(--color-text-secondary);
+            line-height: 1.7;
+        }
+
+        /* Skills Section */
+        .skills-section {
+            background: linear-gradient(135deg, var(--color-pastel-blue) 0%, var(--color-pastel-purple) 100%);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-item {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+
+        .skill-item:hover {
+            transform: translateX(5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .skill-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            flex-shrink: 0;
+        }
+
+        .skill-item:nth-child(1) .skill-icon { background: var(--color-pastel-pink); }
+        .skill-item:nth-child(2) .skill-icon { background: var(--color-pastel-purple); }
+        .skill-item:nth-child(3) .skill-icon { background: var(--color-pastel-green); }
+        .skill-item:nth-child(4) .skill-icon { background: var(--color-pastel-orange); }
+        .skill-item:nth-child(5) .skill-icon { background: var(--color-pastel-blue); }
+
+        .skill-item span {
+            font-weight: 500;
+            color: var(--color-text-primary);
+        }
+
+        /* Schedule Section */
+        .schedule-list {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .schedule-item {
+            display: flex;
+            gap: 20px;
+            padding: 25px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .schedule-item:last-child {
+            border-bottom: none;
+        }
+
+        .schedule-time {
+            font-size: 1.2em;
+            font-weight: 700;
+            color: var(--color-accent-purple);
+            min-width: 80px;
+        }
+
+        .schedule-desc h4 {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .schedule-desc p {
+            color: var(--color-text-secondary);
+            font-size: 0.95em;
+        }
+
+        /* Pricing Section */
+        .pricing-section {
+            background: linear-gradient(135deg, var(--color-pastel-purple) 0%, var(--color-pastel-pink) 100%);
+        }
+
+        .pricing-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .pricing-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .price {
+            font-size: 3em;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--color-accent-purple), var(--color-accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .price-old {
+            font-size: 1.2em;
+            color: var(--color-text-secondary);
+            text-decoration: line-through;
+            margin-left: 10px;
+        }
+
+        .price-note {
+            color: var(--color-accent-green);
+            font-weight: 500;
+            margin: 15px 0 25px;
+        }
+
+        /* Location */
+        .location-section {
+            text-align: center;
+        }
+
+        .location-card {
+            background: var(--color-pastel-green);
+            padding: 40px;
+            border-radius: 16px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .location-card h3 {
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .location-card p {
+            color: var(--color-text-secondary);
+        }
+
+        /* Team Section */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--color-pastel-purple), var(--color-pastel-blue));
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+            box-shadow: var(--shadow-md);
+        }
+
+        .team-member h4 {
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .team-member p {
+            color: var(--color-text-secondary);
+            font-size: 0.9em;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--color-bg-secondary);
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-item a {
+            color: var(--color-accent-purple);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--color-bg-secondary);
+            color: var(--color-text-secondary);
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: var(--color-accent-purple);
+            text-decoration: none;
+        }
+
+        /* Back Link */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255,255,255,0.8);
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+            transition: color 0.3s;
+        }
+
+        .back-link:hover {
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 25px;
+            }
+
+            .hero h1 {
+                font-size: 2.2em;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1em;
+            }
+
+            .section {
+                padding: 50px 25px;
+            }
+
+            .section-title {
+                font-size: 1.7em;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .schedule-item {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <a href="/" class="back-link">← Вернуться на главную</a>
+                <div class="hero-badge">Маф Клуб предпринимателей</div>
+                <h1>Игра в <span>Мафию</span> для лидеров</h1>
+                <p class="hero-subtitle">Развивайте soft skills через захватывающую игру: убеждение, лидерство, аналитика в условиях неопределённости</p>
+                <a href="https://t.me/sellersmafia" target="_blank" class="cta-btn">Записаться в Telegram</a>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section class="section">
+            <h2 class="section-title">Почему у нас вы <span>реально кайфанёте</span></h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔥</div>
+                    <h3>Реальный адреналин</h3>
+                    <p>Строгие правила и профессиональный ведущий создают полное вовлечение. Здесь нет места скуке — каждая минута на счету.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h3>Деролинг и дружественная среда</h3>
+                    <p>Чёткое разделение игровых действий и реальных отношений. После игры — друзья, во время игры — соперники.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎯</div>
+                    <h3>Развлечение + софт-скиллы</h3>
+                    <p>Захватывающие повороты сюжета плюс дебрифинг для выявления слепых зон в коммуникации и принятии решений.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section skills-section">
+            <h2 class="section-title">Что вы <span>прокачаете</span></h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon">🎤</div>
+                    <span>Убеждение и публичные выступления</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">👁️</div>
+                    <span>Чтение людей и мета-сообщения</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">👑</div>
+                    <span>Лидерство и тимбилдинг</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">💫</div>
+                    <span>Управление чужими эмоциями</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon">📊</div>
+                    <span>Аналитика в условиях неопределённости</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Schedule -->
+        <section class="section">
+            <h2 class="section-title">Как проходит <span>игровой день</span></h2>
+            <div class="schedule-list">
+                <div class="schedule-item">
+                    <div class="schedule-time">12:00</div>
+                    <div class="schedule-desc">
+                        <h4>Мастер-класс и знакомство</h4>
+                        <p>Знакомимся, настраиваемся на игру</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">12:45</div>
+                    <div class="schedule-desc">
+                        <h4>Вводный тренинг</h4>
+                        <p>Правила, стратегии, психология игры</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">13:00</div>
+                    <div class="schedule-desc">
+                        <h4>3-4 игры с дебрифингом</h4>
+                        <p>Играем, анализируем, учимся на ошибках</p>
+                    </div>
+                </div>
+                <div class="schedule-item">
+                    <div class="schedule-time">18:00</div>
+                    <div class="schedule-desc">
+                        <h4>Завершение</h4>
+                        <p>Итоги дня, нетворкинг</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location -->
+        <section class="section location-section">
+            <h2 class="section-title">Где проходит</h2>
+            <div class="location-card">
+                <h3>📍 Москва</h3>
+                <p>ул. Народного Ополчения, 47, корп.1, стр.1</p>
+                <p style="margin-top: 10px; color: var(--color-accent-purple);">м. Октябрьское Поле</p>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section class="section pricing-section">
+            <h2 class="section-title">Стоимость участия</h2>
+            <div class="pricing-card">
+                <h3>Игра + мастер-класс</h3>
+                <div>
+                    <span class="price">4 900 ₽</span>
+                    <span class="price-old">6 500 ₽</span>
+                </div>
+                <p class="price-note">Скидка при раннем бронировании</p>
+                <a href="https://t.me/sellersmafia" target="_blank" class="cta-btn">Забронировать место</a>
+                <p style="margin-top: 25px; color: var(--color-text-secondary); font-size: 0.9em;">
+                    Корпоративные мероприятия: от 10 до 60 человек
+                </p>
+            </div>
+        </section>
+
+        <!-- Team -->
+        <section class="section">
+            <h2 class="section-title">Наша <span>команда</span></h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-avatar">👨‍💼</div>
+                    <h4>Роман</h4>
+                    <p>Основатель, тренер</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-avatar">👩‍💼</div>
+                    <h4>Ольга</h4>
+                    <p>Служба заботы</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-avatar">🎭</div>
+                    <h4>Егор</h4>
+                    <p>Ведущий</p>
+                </div>
+                <div class="team-member">
+                    <div class="team-avatar">🎯</div>
+                    <h4>Егор</h4>
+                    <p>Тренер</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section contact-section">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    📱 <a href="tel:+79165274482">+7 916 527 4482</a>
+                </div>
+                <div class="contact-item">
+                    ✉️ <a href="mailto:info@mafclub.biz">info@mafclub.biz</a>
+                </div>
+                <div class="contact-item">
+                    💬 <a href="https://t.me/sellersmafia" target="_blank">@sellersmafia</a>
+                </div>
+            </div>
+            <a href="https://t.me/sellersmafia" target="_blank" class="cta-btn">Написать в Telegram</a>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>ИП Воробьев Роман Юрьевич | ОГРНИП 315774600419831</p>
+            <p style="margin-top: 10px;">
+                <a href="/privacy/">Политика конфиденциальности</a>
+            </p>
+            <p style="margin-top: 15px;">© 2024 Маф Клуб. Все права защищены.</p>
+        </footer>
+    </div>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105445306', 'ym');
+
+        ym(105445306, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/105445306" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+</body>
+</html>
