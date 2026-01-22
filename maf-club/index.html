@@ -191,6 +191,11 @@
             flex-shrink: 0;
         }
 
+        .skill-icon img {
+            width: 32px;
+            height: 32px;
+        }
+
         .skill-item strong {
             color: var(--color-text);
         }
@@ -230,6 +235,38 @@
         .schedule-content p {
             color: var(--color-text-light);
             font-size: 0.95em;
+        }
+
+        /* Gallery */
+        .gallery-section {
+            background: var(--color-bg);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .gallery-item {
+            border-radius: 12px;
+            overflow: hidden;
+            aspect-ratio: 4/3;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
         /* Location */
@@ -336,6 +373,13 @@
             align-items: center;
             justify-content: center;
             font-size: 2.5em;
+            overflow: hidden;
+        }
+
+        .team-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .team-member h4 {
@@ -451,23 +495,23 @@
             <p class="section-subtitle">Удовольствие, незабываемые эмоции и полигон для прокачки навыков:</p>
             <div class="skills-list">
                 <div class="skill-item">
-                    <span class="skill-icon">🎤</span>
+                    <span class="skill-icon"><img src="images/trophy_color.svg" alt=""></span>
                     <div><strong>Убеждение и публичные выступления</strong> <span>— в ситуации 100% реализма с измеримым результатом</span></div>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-icon">👁️</span>
+                    <span class="skill-icon"><img src="images/eye_color.svg" alt=""></span>
                     <div><strong>Чтение людей и мета-сообщения</strong> <span>— с моментальным фидбэком, что работает</span></div>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-icon">👑</span>
+                    <span class="skill-icon"><img src="images/flexed_biceps_color.svg" alt=""></span>
                     <div><strong>Лидерство и тимбилдинг</strong> <span>— как формальное (роли Дона, Шерифа), так и неформальное</span></div>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-icon">💫</span>
+                    <span class="skill-icon"><img src="images/handshake_color.svg" alt=""></span>
                     <div><strong>Управление чужими эмоциями и решениями</strong> <span>— от умения донести свою позицию до влияния на других</span></div>
                 </div>
                 <div class="skill-item">
-                    <span class="skill-icon">📊</span>
+                    <span class="skill-icon"><img src="images/bullseye_color.svg" alt=""></span>
                     <div><strong>Аналитика</strong> <span>— в условиях человеческого фактора (не всё так просто)</span></div>
                 </div>
             </div>
@@ -508,6 +552,19 @@
             </div>
         </section>
 
+        <!-- Gallery -->
+        <section class="section gallery-section">
+            <h2 class="section-title">Как это выглядит</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="images/1.jpeg" alt="Мафклуб"></div>
+                <div class="gallery-item"><img src="images/2.jpeg" alt="Мафклуб"></div>
+                <div class="gallery-item"><img src="images/3.jpg" alt="Мафклуб"></div>
+                <div class="gallery-item"><img src="images/4.jpeg" alt="Мафклуб"></div>
+                <div class="gallery-item"><img src="images/5.jpg" alt="Мафклуб"></div>
+                <div class="gallery-item"><img src="images/6.jpeg" alt="Мафклуб"></div>
+            </div>
+        </section>
+
         <!-- Location -->
         <section class="section location-section">
             <h2 class="section-title">Наш новый зал</h2>
@@ -542,22 +599,22 @@
             <h2 class="section-title">Команда</h2>
             <div class="team-grid">
                 <div class="team-member">
-                    <div class="team-avatar">👨‍💼</div>
+                    <div class="team-avatar"><img src="images/team_roman.jpg" alt="Роман"></div>
                     <h4>Роман</h4>
                     <p>Тренер и ведущий игры, основатель клуба</p>
                 </div>
                 <div class="team-member">
-                    <div class="team-avatar">👩‍💼</div>
+                    <div class="team-avatar"><img src="images/team_photo1.jpg" alt="Ольга"></div>
                     <h4>Ольга</h4>
                     <p>Служба заботы</p>
                 </div>
                 <div class="team-member">
-                    <div class="team-avatar">🎭</div>
+                    <div class="team-avatar"><img src="images/team_photo2.jpg" alt="Егор"></div>
                     <h4>Егор</h4>
                     <p>Ведущий игры</p>
                 </div>
                 <div class="team-member">
-                    <div class="team-avatar">🎯</div>
+                    <div class="team-avatar"><img src="images/team_photo3.jpg" alt="Егор"></div>
                     <h4>Егор</h4>
                     <p>Тренер</p>
                 </div>
