@@ -51,13 +51,38 @@
             background: var(--color-bg);
         }
 
-        /* Hero */
+        /* Hero - text left, image right */
         .hero {
-            background: linear-gradient(135deg, rgba(26, 26, 46, 0.85) 0%, rgba(22, 33, 62, 0.85) 100%),
-                        url('images/maf20.jpeg') center/cover no-repeat;
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
             color: white;
             padding: 60px 40px 80px;
-            text-align: center;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .hero-content {
+            text-align: left;
+        }
+
+        .hero-image {
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media (max-width: 900px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero-content { text-align: center; }
         }
 
         .back-link {
@@ -242,22 +267,26 @@
             .schedule-grid { grid-template-columns: 1fr; }
         }
 
-        /* Gallery - Single large banner */
+        /* Gallery - 6 photos grid like original */
         .gallery-section {
             background: var(--color-bg);
-            padding: 0;
         }
 
-        .gallery-banner {
-            width: 100%;
-            max-height: 500px;
-            overflow: hidden;
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
         }
 
-        .gallery-banner img {
+        .gallery-grid img {
             width: 100%;
-            height: 100%;
+            height: 250px;
             object-fit: cover;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
         }
 
         /* Location */
@@ -521,11 +550,16 @@
     <div class="container">
         <!-- Hero -->
         <section class="hero">
-            <a href="/" class="back-link">← На главную</a>
-            <div class="hero-label">Игра в Мафию для лидеров</div>
-            <h1>MafClub<br>.biz</h1>
-            <p class="hero-date">20 декабря (Сб), 12:00-18:00</p>
-            <a href="https://t.me/sellersmafia" target="_blank" class="btn">Забронировать место</a>
+            <div class="hero-content">
+                <a href="/" class="back-link">← На главную</a>
+                <div class="hero-label">Игра в Мафию для лидеров</div>
+                <h1>MafClub<br>.biz</h1>
+                <p class="hero-date">20 декабря (Сб), 12:00-18:00</p>
+                <a href="https://t.me/sellersmafia" target="_blank" class="btn">Забронировать место</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/maf20.jpeg" alt="Игра в Мафию">
+            </div>
         </section>
 
         <!-- Benefits -->
@@ -614,19 +648,21 @@
             </div>
         </section>
 
-        <!-- Gallery Banner -->
-        <section class="gallery-section">
-            <div class="gallery-banner">
-                <img src="images/1.jpeg" alt="Мафклуб - игра">
+        <!-- Gallery - 6 photos -->
+        <section class="section gallery-section">
+            <div class="gallery-grid">
+                <img src="images/1.jpeg" alt="Мафклуб">
+                <img src="images/2.jpeg" alt="Мафклуб">
+                <img src="images/3.jpg" alt="Мафклуб">
+                <img src="images/4.jpeg" alt="Мафклуб">
+                <img src="images/5.jpg" alt="Мафклуб">
+                <img src="images/6.jpeg" alt="Мафклуб">
             </div>
         </section>
 
         <!-- Location -->
         <section class="section location-section">
             <h2 class="section-title">Наш новый зал</h2>
-            <div class="location-slider">
-                <img src="images/5.jpg" alt="Зал Мафклуба">
-            </div>
             <div class="location-card">
                 <h3>📍 Москва</h3>
                 <p>ул. Народного Ополчения, 47, корп.1, стр.1</p>
