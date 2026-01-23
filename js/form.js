@@ -212,6 +212,7 @@ function showSuccess() {
 
 async function handleStep1Submit(e) {
     e.preventDefault();
+    console.log('Step 1 submit started');
 
     const form = e.target;
     const submitBtn = form.querySelector('button[type="submit"]');
@@ -223,6 +224,8 @@ async function handleStep1Submit(e) {
         timestamp: new Date().toLocaleString('ru-RU')
     };
 
+    console.log('Step 1 data:', formData.step1);
+
     // Disable button
     submitBtn.disabled = true;
     const originalHTML = submitBtn.innerHTML;
@@ -230,6 +233,7 @@ async function handleStep1Submit(e) {
 
     // Send step 1 data to backend
     try {
+        console.log('Sending to forum-step1.php...');
         const response = await fetch('https://videos.moderator.top/forum-step1.php', {
             method: 'POST',
             headers: {
@@ -241,14 +245,20 @@ async function handleStep1Submit(e) {
             })
         });
 
+        console.log('Response status:', response.status);
+        const result = await response.json();
+        console.log('Response data:', result);
+
         if (!response.ok) {
             throw new Error('Server error');
         }
 
+        console.log('Step 1 sent successfully, going to step 2');
         // Go to step 2 after successful submission
         goToStep2();
     } catch (error) {
         console.error('Error sending step 1:', error);
+        alert('Ошибка отправки данных. Проверьте подключение к интернету. Вы все равно можете продолжить заполнение анкеты.');
         // Still proceed to step 2 even if sending fails
         goToStep2();
     } finally {
