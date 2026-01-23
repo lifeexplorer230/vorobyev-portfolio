@@ -8,14 +8,6 @@ let formData = {
 document.addEventListener('DOMContentLoaded', function() {
     // Create modal HTML
     createFormModal();
-
-    // Attach click handlers to all CTA buttons
-    document.querySelectorAll('a[href*="google.com/forms"]').forEach(btn => {
-        btn.addEventListener('click', function(e) {
-            e.preventDefault();
-            openFormModal();
-        });
-    });
 });
 
 function createFormModal() {
@@ -224,36 +216,15 @@ async function handleStep1Submit(e) {
     const form = e.target;
     const submitBtn = form.querySelector('button[type="submit"]');
 
-    // Collect data
+    // Collect data from step 1
     formData.step1 = {
         name: document.getElementById('userName').value,
         phone: document.getElementById('userPhone').value,
         timestamp: new Date().toLocaleString('ru-RU')
     };
 
-    // Disable button
-    submitBtn.disabled = true;
-    submitBtn.textContent = 'Отправка...';
-
-    // Send to Telegram
-    const message = `🆕 НОВАЯ ЗАЯВКА (Шаг 1)
-
-👤 Имя: ${formData.step1.name}
-📱 Телефон: ${formData.step1.phone}
-
-⏰ ${formData.step1.timestamp}`.trim();
-
-    try {
-        await sendToTelegram(message);
-        goToStep2();
-    } catch (error) {
-        console.error('Error sending to Telegram:', error);
-        // Still proceed to step 2 even if TG fails
-        goToStep2();
-    }
-
-    submitBtn.disabled = false;
-    submitBtn.innerHTML = 'Далее <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    // Just go to step 2, no submission yet
+    goToStep2();
 }
 
 async function handleStep2Submit(e) {
