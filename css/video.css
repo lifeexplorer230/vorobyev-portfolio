@@ -1,0 +1,44 @@
+/* Video Section Styles */
+.videos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    margin-top: 32px;
+}
+
+.video-item {
+    width: 100%;
+}
+
+.video-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-text-primary, #1a1a1a);
+    margin-bottom: 16px;
+    line-height: 1.4;
+}
+
+.video-player {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    background-color: #000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.video-player:focus {
+    outline: 2px solid var(--color-accent-blue, #4a90d9);
+    outline-offset: 4px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .videos-container {
+        gap: 32px;
+    }
+
+    .video-title {
+        font-size: 18px;
+    }
+}
