@@ -1,7 +1,3 @@
-// Telegram Bot Configuration
-const TG_BOT_TOKEN = '8393335656:AAGUfFWaEPeSsuyIFy07mV7Tt8GAmH9j76E';
-const TG_CHAT_ID = '100596580';
-
 // Form data storage
 let formData = {
     step1: {},
@@ -287,55 +283,27 @@ async function handleStep2Submit(e) {
     submitBtn.disabled = true;
     submitBtn.textContent = 'Отправка...';
 
-    // Send full application to Telegram
-    const message = `✅ ПОЛНАЯ ЗАЯВКА НА ФОРУМ-ГРУППУ
-
-━━━━━━━━━━━━━━━━
-👤 КОНТАКТЫ
-━━━━━━━━━━━━━━━━
-Имя: ${formData.step1.name}
-Телефон: ${formData.step1.phone}
-Email: ${formData.step2.email}
-Возраст: ${formData.step2.age}
-Город: ${formData.step2.city}
-Соцсеть: ${formData.step2.social}
-
-━━━━━━━━━━━━━━━━
-💼 БИЗНЕС/КАРЬЕРА
-━━━━━━━━━━━━━━━━
-Род деятельности:
-${formData.step2.activity}
-
-Доход: ${formData.step2.income}
-
-Направление развития:
-${formData.step2.goals}
-
-Вопросы для группы:
-${formData.step2.questions}
-
-Экспертиза:
-${formData.step2.expertise}
-
-Вехи развития:
-${formData.step2.milestones}
-
-Параметры дела:
-${formData.step2.params}
-
-━━━━━━━━━━━━━━━━
-👨‍👩‍👧‍👦 ЛИЧНОЕ
-━━━━━━━━━━━━━━━━
-Семья: ${formData.step2.family}
-
-О себе:
-${formData.step2.about}
-
-━━━━━━━━━━━━━━━━
-⏰ ${formData.step1.timestamp}`.trim();
+    // Prepare data for backend
+    const applicationData = {
+        name: formData.step1.name,
+        phone: formData.step1.phone,
+        email: formData.step2.email,
+        age: formData.step2.age,
+        city: formData.step2.city,
+        social: formData.step2.social,
+        activity: formData.step2.activity,
+        income: formData.step2.income,
+        goals: formData.step2.goals,
+        questions: formData.step2.questions,
+        expertise: formData.step2.expertise,
+        milestones: formData.step2.milestones,
+        params: formData.step2.params,
+        family: formData.step2.family,
+        about: formData.step2.about
+    };
 
     try {
-        await sendToTelegram(message);
+        await sendToTelegram(applicationData);
         showSuccess();
 
         // Reset forms
@@ -350,22 +318,19 @@ ${formData.step2.about}
     }
 }
 
-async function sendToTelegram(message) {
-    const url = `https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage`;
+async function sendToTelegram(data) {
+    const url = 'https://videos.moderator.top/forum-submit.php';
 
     const response = await fetch(url, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
-        body: JSON.stringify({
-            chat_id: TG_CHAT_ID,
-            text: message
-        })
+        body: JSON.stringify(data)
     });
 
     if (!response.ok) {
-        throw new Error('Telegram API error');
+        throw new Error('Server error');
     }
 
     return response.json();
