@@ -223,8 +223,38 @@ async function handleStep1Submit(e) {
         timestamp: new Date().toLocaleString('ru-RU')
     };
 
-    // Just go to step 2, no submission yet
-    goToStep2();
+    // Disable button
+    submitBtn.disabled = true;
+    const originalHTML = submitBtn.innerHTML;
+    submitBtn.textContent = 'Отправка...';
+
+    // Send step 1 data to backend
+    try {
+        const response = await fetch('https://videos.moderator.top/forum-step1.php', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                name: formData.step1.name,
+                phone: formData.step1.phone
+            })
+        });
+
+        if (!response.ok) {
+            throw new Error('Server error');
+        }
+
+        // Go to step 2 after successful submission
+        goToStep2();
+    } catch (error) {
+        console.error('Error sending step 1:', error);
+        // Still proceed to step 2 even if sending fails
+        goToStep2();
+    } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalHTML;
+    }
 }
 
 async function handleStep2Submit(e) {
