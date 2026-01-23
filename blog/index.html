@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Блог Романа Воробьёва о предпринимательстве, модерации форум-групп, мини-групп и десяток, бизнесе на маркетплейсах.">
+    <title>Блог | Роман Воробьёв - Модератор форум-групп, мини-групп и десяток</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://moderator.top/blog/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Блог Романа Воробьёва">
+    <meta property="og:description" content="Посты о предпринимательстве, модерации форум-групп, лидерстве и бизнесе на маркетплейсах.">
+    <meta property="og:image" content="https://moderator.top/photo.webp">
+    <meta property="og:url" content="https://moderator.top/blog/">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+
+    <style>
+        :root {
+            --color-text-primary: #1a1a1a;
+            --color-text-secondary: #666666;
+            --color-bg-primary: #ffffff;
+            --color-bg-secondary: #f5f5f5;
+            --color-accent-purple: #8b7dff;
+            --color-accent-blue: #6b9dff;
+            --color-accent-green: #22c55e;
+            --color-pastel-purple: #f0f0f7;
+            --color-pastel-blue: #f0f7f7;
+            --color-pastel-green: #f0f7f0;
+            --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+            --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
+            --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.06), 0 2px 4px rgba(0, 0, 0, 0.04);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "Roboto", sans-serif;
+            line-height: 1.7;
+            color: var(--color-text-primary);
+            background-color: #fafafa;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--color-bg-primary);
+            box-shadow: var(--shadow-lg);
+            min-height: 100vh;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--color-pastel-blue) 0%, var(--color-pastel-purple) 100%);
+            padding: 40px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, var(--color-accent-blue), var(--color-accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            color: var(--color-text-secondary);
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: var(--color-accent-purple);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 60px;
+            color: var(--color-text-secondary);
+        }
+
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--color-bg-secondary);
+            border-top-color: var(--color-accent-purple);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .error {
+            text-align: center;
+            padding: 60px;
+            color: #dc3545;
+        }
+
+        .posts {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .post {
+            background: var(--color-bg-primary);
+            border: 1px solid #eee;
+            border-radius: 16px;
+            padding: 25px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .post:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .post-date {
+            font-size: 0.85em;
+            color: var(--color-text-secondary);
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .post-views {
+            background: var(--color-pastel-purple);
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.85em;
+        }
+
+        .post-text {
+            font-size: 1.05em;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            word-wrap: break-word;
+        }
+
+        .post-text a {
+            color: var(--color-accent-purple);
+            text-decoration: none;
+        }
+
+        .post-text a:hover {
+            text-decoration: underline;
+        }
+
+        .post-images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .post-images img {
+            width: 100%;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .post-images img:hover {
+            transform: scale(1.02);
+        }
+
+        .post-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 15px;
+            color: var(--color-accent-blue);
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        .post-link:hover {
+            text-decoration: underline;
+        }
+
+        .telegram-cta {
+            background: linear-gradient(135deg, var(--color-pastel-green) 0%, var(--color-pastel-blue) 100%);
+            padding: 40px;
+            text-align: center;
+            margin-top: 40px;
+            border-radius: 16px;
+        }
+
+        .telegram-cta h3 {
+            margin-bottom: 15px;
+            color: var(--color-text-primary);
+        }
+
+        .telegram-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, var(--color-accent-green), var(--color-accent-blue));
+            color: white;
+            padding: 14px 28px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .telegram-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        footer {
+            background: var(--color-bg-secondary);
+            text-align: center;
+            padding: 25px;
+            color: var(--color-text-secondary);
+            font-size: 0.9em;
+        }
+
+        /* SEO: Скрытый контент для поисковиков */
+        .seo-content {
+            position: absolute;
+            left: -9999px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 1.6em;
+            }
+
+            .content {
+                padding: 25px 20px;
+            }
+
+            .post {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a href="/" class="back-link">&larr; На главную</a>
+            <h1>Блог</h1>
+            <p>Посты из Telegram-канала о предпринимательстве и бизнесе</p>
+        </header>
+
+        <main class="content">
+            <div id="posts-container">
+                <div class="loading">
+                    <div class="loading-spinner"></div>
+                    <p>Загрузка постов...</p>
+                </div>
+            </div>
+
+            <div class="telegram-cta">
+                <h3>Подпишись на канал в Telegram</h3>
+                <p style="color: var(--color-text-secondary); margin-bottom: 20px;">Там посты появляются первыми</p>
+                <a href="https://t.me/FirstonOzon" target="_blank" class="telegram-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18 1.897-.962 6.502-1.359 8.627-.168.9-.5 1.201-.820 1.230-.697.064-1.226-.461-1.901-.903-1.056-.692-1.653-1.123-2.678-1.799-1.185-.781-.417-1.21.258-1.911.177-.184 3.247-2.977 3.307-3.230.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.139-5.062 3.345-.479.329-.913.489-1.302.481-.428-.008-1.252-.241-1.865-.44-.752-.244-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635.099-.002.321.023.465.14.121.098.155.23.171.324.016.094.036.308.020.475z"/>
+                    </svg>
+                    Подписаться на @FirstonOzon
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 <a href="/" style="color: inherit;">Роман Воробьёв</a>. Все права защищены.</p>
+        </footer>
+    </div>
+
+    <!-- SEO: Статический контент для поисковиков (обновляется вручную или скриптом) -->
+    <div class="seo-content" aria-hidden="true">
+        <h2>Блог модератора форум-групп Романа Воробьёва</h2>
+        <p>Посты о модерации мини-групп, десяток, форум-групп для предпринимателей.
+        Темы: бизнес на маркетплейсах, лидерство, P2P группы, мастермайнды, развитие предпринимателей.</p>
+    </div>
+
+    <script>
+        const API_URL = 'http://80.90.183.52:5000/api/posts';
+
+        const postsContainer = document.getElementById('posts-container');
+
+        function formatDate(dateStr) {
+            if (!dateStr) return '';
+            const date = new Date(dateStr);
+            const options = { day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit' };
+            return date.toLocaleDateString('ru-RU', options);
+        }
+
+        function renderPost(post) {
+            const images = post.images && post.images.length > 0
+                ? `<div class="post-images">${post.images.map(img =>
+                    `<img src="${img}" alt="Изображение к посту" loading="lazy">`
+                ).join('')}</div>`
+                : '';
+
+            return `
+                <article class="post">
+                    <div class="post-date">
+                        <span>${formatDate(post.date)}</span>
+                        ${post.views ? `<span class="post-views">${post.views} просмотров</span>` : ''}
+                    </div>
+                    <div class="post-text">${post.text_html || post.text}</div>
+                    ${images}
+                    ${post.url ? `<a href="${post.url}" target="_blank" rel="noopener" class="post-link">
+                        Открыть в Telegram &rarr;
+                    </a>` : ''}
+                </article>
+            `;
+        }
+
+        async function loadPosts() {
+            try {
+                const response = await fetch(API_URL);
+
+                if (!response.ok) {
+                    throw new Error('Ошибка загрузки');
+                }
+
+                const data = await response.json();
+
+                if (data.posts && data.posts.length > 0) {
+                    postsContainer.innerHTML = `
+                        <div class="posts">
+                            ${data.posts.map(renderPost).join('')}
+                        </div>
+                    `;
+                } else {
+                    postsContainer.innerHTML = '<p class="error">Посты не найдены</p>';
+                }
+            } catch (error) {
+                console.error('Error loading posts:', error);
+                postsContainer.innerHTML = `
+                    <div class="error">
+                        <p>Не удалось загрузить посты</p>
+                        <p style="margin-top: 15px;">
+                            <a href="https://t.me/FirstonOzon" target="_blank" class="telegram-btn" style="display: inline-flex;">
+                                Читать в Telegram
+                            </a>
+                        </p>
+                    </div>
+                `;
+            }
+        }
+
+        // Загружаем посты при открытии страницы
+        loadPosts();
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m,e,t,r,i,k,a){
+            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+            m[i].l=1*new Date();
+            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+            k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=105445306', 'ym');
+
+        ym(105445306, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", accurateTrackBounce:true, trackLinks:true});
+    </script>
+</body>
+</html>
