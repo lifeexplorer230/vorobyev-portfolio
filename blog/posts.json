@@ -1,9 +1,23 @@
 {
   "channel": "FirstonOzon",
   "channel_url": "https://t.me/FirstonOzon",
-  "updated": "2026-02-03T13:00:02.839053Z",
+  "updated": "2026-02-03T14:00:03.121898Z",
   "count": 20,
   "posts": [
+    {
+      "id": "ac17af8c",
+      "post_id": "1387",
+      "text": "Мир изменился. Вы заметили?Хочу поделиться двумя историями, которые меня зацепили.## История первая: «Мой ИИ всё забывал»Bhanu Teja — основатель SiteGPT, сервиса чат-ботов для бизнеса. Человек, который работает с ИИ каждый день.И вот что его бесило:«Каждый разговор с ИИ начинался с нуля. Контекст вчерашнего дня? Исчез. Исследование прошлой недели? Потеряно в чатах.»Знакомо?Я сам ловил себя на мысли: объясняю ИИ одно и то же в десятый раз. Как будто разговариваю с человеком, у которого амнезия.Что сделал Bhanu?Он взял open-source платформу OpenClaw и построил «Mission Control» — систему из 10 ИИ-агентов, которые работают как настоящая команда:- Один агент пишет код- Другой исследует конкурентов- Третий проверяет качество- Четвёртый общается с клиентамиКаждый помнит свои задачи. Каждый продолжает с того места, где остановился. Они видят работу друг друга и координируются автоматически.## История вторая: «14 сотрудников, ноль зарплат»Адам Холт — предприниматель из Новой Зеландии. Управляетшестью компаниямиодновременно.Консалтинг. Автоматизация заказов. Аналитика цен. Обучение пилотов дронов. И ещё два бизнеса.Как он это делает?У него команда из 14 ИИ-агентов под управлением одного «директора» (модель Opus 4.5).Когда приходит задача, «директор» решает:- Простая → делает сам- Нужен специалист → передаёт нужному агенту- Сложный проект → разбивает на части и запускает параллельноАдам пишет :«Работа, которая раньше стоила $100-200K консалтинга, теперь делается за день.»Звучит как фантастика. Но это уже реальность!## Что общего между этими историями?Оба предпринимателя столкнулись с одной проблемой:ИИ как инструмент — это потолок.Спросил → получил ответ → забыл. Этого недостаточно для реального бизнеса.Бизнес — это десятки процессов, которые происходят одновременно. Данные, люди, задачи, сроки, риски.Один ИИ-ассистент не может удержать эту сложность.А вот команда ИИ-агентов — может.Мы сейчас в точке перелома.Вспомните: когда появились смартфоны, многие говорили «мне хватает обычного телефона». Когда появился интернет — «зачем мне это, у меня есть газеты».История повторяется.Большинство до сих пор используют ИИ как в 2023 году: как умную поисковую строку.Но те, кто видит дальше, уже строят системы!## Технология доступна уже сейчасОбе истории построены на OpenClaw — open-source платформе для создания команд ИИ-агентов.- Бесплатно- Работает на вашем компьютере или сервере- Подключается к Telegram, WhatsApp, Discord- Полный контроль над даннымиА вы уже думали о том, как интегрировать ИИ-агентов в свои процессы?Напишите в комментариях — интересно услышать ваши мысли.",
+      "text_html": "<div><b>Мир изменился. Вы заметили?<br/></b><br/>Хочу поделиться двумя историями, которые меня зацепили.<br/><br/><br/><b>## История первая: «Мой ИИ всё забывал»<br/></b><br/>Bhanu Teja — основатель SiteGPT, сервиса чат-ботов для бизнеса. Человек, который работает с ИИ каждый день.<br/><br/>И вот что его бесило:<br/><br/><i>«Каждый разговор с ИИ начинался с нуля. Контекст вчерашнего дня? Исчез. Исследование прошлой недели? Потеряно в чатах.»<br/></i><br/>Знакомо?<br/><br/>Я сам ловил себя на мысли: объясняю ИИ одно и то же в десятый раз. Как будто разговариваю с человеком, у которого амнезия.<br/><br/><b>Что сделал Bhanu?<br/></b><br/>Он взял open-source платформу OpenClaw и построил «Mission Control» — систему из 10 ИИ-агентов, которые работают как настоящая команда:<br/><br/>- Один агент пишет код<br/>- Другой исследует конкурентов<br/>- Третий проверяет качество<br/>- Четвёртый общается с клиентами<br/><br/>Каждый помнит свои задачи. Каждый продолжает с того места, где остановился. Они видят работу друг друга и координируются автоматически.<br/><br/><br/><b>## История вторая: «14 сотрудников, ноль зарплат»<br/></b><br/>Адам Холт — предприниматель из Новой Зеландии. Управляет <b>шестью компаниями</b> одновременно.<br/><br/>Консалтинг. Автоматизация заказов. Аналитика цен. Обучение пилотов дронов. И ещё два бизнеса.<br/><br/>Как он это делает?<br/><br/>У него команда из 14 ИИ-агентов под управлением одного «директора» (модель Opus 4.5).<br/><br/>Когда приходит задача, «директор» решает:<br/>- Простая → делает сам<br/>- Нужен специалист → передаёт нужному агенту<br/>- Сложный проект → разбивает на части и запускает параллельно<br/><br/>Адам пишет :<i> «Работа, которая раньше стоила $100-200K консалтинга, теперь делается за день.»</i><br/><br/>Звучит как фантастика. Но это уже реальность!<br/><br/><br/><b>## Что общего между этими историями?<br/></b><br/>Оба предпринимателя столкнулись с одной проблемой:<br/><br/><b>ИИ как инструмент — это потолок.</b><br/><br/>Спросил → получил ответ → забыл. Этого недостаточно для реального бизнеса.<br/><br/>Бизнес — это десятки процессов, которые происходят одновременно. Данные, люди, задачи, сроки, риски.<br/><br/>Один ИИ-ассистент не может удержать эту сложность.<br/><br/><b>А вот команда ИИ-агентов — может.</b><br/><br/>Мы сейчас в точке перелома.<br/><br/>Вспомните: когда появились смартфоны, многие говорили «мне хватает обычного телефона». Когда появился интернет — «зачем мне это, у меня есть газеты».<br/><br/>История повторяется.<br/><br/>Большинство до сих пор используют ИИ как в 2023 году: как умную поисковую строку.<br/><br/>Но те, кто видит дальше, уже строят системы!<br/><br/><br/><b>## Технология доступна уже сейчас<br/></b><br/>Обе истории построены на OpenClaw — open-source платформе для создания команд ИИ-агентов.<br/><br/>- Бесплатно<br/>- Работает на вашем компьютере или сервере<br/>- Подключается к Telegram, WhatsApp, Discord<br/>- Полный контроль над данными<br/><br/><br/><b>А вы уже думали о том, как интегрировать ИИ-агентов в свои процессы?<br/></b><br/>Напишите в комментариях — интересно услышать ваши мысли.</div>",
+      "date": "2026-02-03T13:17:51+00:00",
+      "images": [
+        "https://cdn4.telesco.pe/file/u_iiuyYEelfrQanQ0vnJe8PkTgAdHGa53Gc5NL22zA4ucSYg3Ag56N2__pSjU0NiNzB5902YI-XYZ6acbGw49MQLI02LTRRPZZiJ70F_flBU4FqLACcN86YM_9Dg-KGfT6V-F9cHRl5RZbLCN2ipS77pe2Bs0npiRNRaiODs9MT7MabV37vYra_xJC73w9aL3NNp_kYyYG7pu2tWz0Yh0RikDRNZckHzkRbsK1SeFIqDa6HYrj7b4OY2lznw58LN76qhHsdLe-q9DVxqRlZ068_mxpcoJAsc5uw_QW0EAYN-UkyW4D1EFyIS-bVtMYZ55VDZEJfqZFkoD_U3siXS7g.jpg"
+      ],
+      "video_thumb": null,
+      "links": [],
+      "views": "56",
+      "url": "https://t.me/FirstonOzon/1387"
+    },
     {
       "id": "e4b6bd40",
       "post_id": "1386",
@@ -13,7 +27,7 @@
       "images": [],
       "video_thumb": null,
       "links": [],
-      "views": "147",
+      "views": "163",
       "url": "https://t.me/FirstonOzon/1386"
     },
     {
@@ -27,7 +41,7 @@
       ],
       "video_thumb": null,
       "links": [],
-      "views": "174",
+      "views": "185",
       "url": "https://t.me/FirstonOzon/1385"
     },
     {
@@ -44,7 +58,7 @@
           "text": "https://youtu.be/pViLrwYjNPs"
         }
       ],
-      "views": "254",
+      "views": "267",
       "url": "https://t.me/FirstonOzon/1384"
     },
     {
@@ -54,9 +68,9 @@
       "text_html": "<div>Согласны?</div>",
       "date": "2026-01-28T14:31:55+00:00",
       "images": [],
-      "video_thumb": "https://cdn4.telesco.pe/file/n3Abkuli4Zm4q1bb92Ihao707yJ9zxBIZYv19Y7yLDf_W_BIEFNiAF4199N1s412KwAyZd40G8-dbbjhbUSEr4z00hejFihcZOD_naf02HAmGwU6aLs9EYNKmenygcjOYYA4_nPkvfe_VTiT4f1gq_R7AbR7WmQwe1q7xMFg_RpuRMZSeiDm_53DIIhsSOB9kMFcGSOBeQ4gN0fqNrVBYSeCH-0E0gQ1rbDwOet9qF8yaN7mBWqdqe_oJWICZ4xgCgJRH05FsQa2o9fMpS0xgSXVKB3GMI-t2JK_ysRg3YZsxlw3xaxz7F2nGYia7xoja7F3zcM46Q_pYPIfrnwQOw",
+      "video_thumb": "https://cdn4.telesco.pe/file/JUPs8Vhk4haPuSfEOmI46EmysKR3SveJIjGYw4Jwui7NzsuxSp-kD2UcfoNljYM6GfejwLk0ja0VVh7MzSXhHEf9U4LJW1_uvGTvawTj4WyAGEWfGx0M2VJN6X8mTM3-BOXg5Jewj3UDGzHZVkngeHdFGzWcZbH6UYCyHJL4GaU-ZCaLUAMitrMyyNxdDoLpM52YLDYl3r_kJBX9vT6MmSQHpBLGOnNFir5YHVYTkYhXIq6sB2zQ1jBVJAhrsaXVioWyRTFQTB2w09tHU8WLNhLOEH65iQ_dZe1Xlll5f56d9-GGPJ-MAwpfEqBknqmfeEWRIODknOjQHa44xyCDUQ",
       "links": [],
-      "views": "263",
+      "views": "274",
       "url": "https://t.me/FirstonOzon/1383"
     },
     {
@@ -70,7 +84,7 @@
       ],
       "video_thumb": null,
       "links": [],
-      "views": "397",
+      "views": "409",
       "url": "https://t.me/FirstonOzon/1382"
     },
     {
@@ -93,7 +107,7 @@
           "text": "https://forum.moderator.top/"
         }
       ],
-      "views": "350",
+      "views": "361",
       "url": "https://t.me/FirstonOzon/1381"
     },
     {
@@ -107,7 +121,7 @@
       ],
       "video_thumb": null,
       "links": [],
-      "views": "300",
+      "views": "309",
       "url": "https://t.me/FirstonOzon/1380"
     },
     {
@@ -126,7 +140,7 @@
           "text": "https://forum.moderator.top/"
         }
       ],
-      "views": "282",
+      "views": "286",
       "url": "https://t.me/FirstonOzon/1379"
     },
     {
@@ -143,7 +157,7 @@
           "text": "вот тут"
         }
       ],
-      "views": "365",
+      "views": "367",
       "url": "https://t.me/FirstonOzon/1378"
     },
     {
@@ -162,7 +176,7 @@
           "text": "@SODA_app_bot"
         }
       ],
-      "views": "418",
+      "views": "419",
       "url": "https://t.me/FirstonOzon/1377"
     },
     {
@@ -176,7 +190,7 @@
       ],
       "video_thumb": null,
       "links": [],
-      "views": "337",
+      "views": "338",
       "url": "https://t.me/FirstonOzon/1375"
     },
     {
@@ -193,7 +207,7 @@
           "text": "https://youtube.com/shorts/2IpPSJRDr5o?feature=share"
         }
       ],
-      "views": "319",
+      "views": "325",
       "url": "https://t.me/FirstonOzon/1374"
     },
     {
@@ -221,7 +235,7 @@
       ],
       "video_thumb": null,
       "links": [],
-      "views": "327",
+      "views": "328",
       "url": "https://t.me/FirstonOzon/1372"
     },
     {
@@ -238,7 +252,7 @@
           "text": "https://youtu.be/IpJ5hMmRnzQ"
         }
       ],
-      "views": "422",
+      "views": "424",
       "url": "https://t.me/FirstonOzon/1371"
     },
     {
@@ -250,7 +264,7 @@
       "images": [],
       "video_thumb": "https://cdn4.telesco.pe/file/u_9jx9S_WMispj0iBY5O2UJOQIl4FYQRy0vOZSnyEr5yLy5ERgp1kQHMMk65zN1vFpnkv9pwECQwRx1ih7JUoo_nWnCatXCKEVk04Y5Arikbvwpj_fukf07DThIVb5dU6HbMtBzDLxi0-xMqJGEKkJOaxMroE6sibbGFHuBCfB5BNH6WKSjMneOhUZcLHMYBM5FrquZ03Zo1i_MDshjhFROYzbAMXwaa1M0R_tHTHYOdhj7Wy5yW2v6rZRqpfExQ_U79sX1EtN07U7_sWIlxq0XJeRbeDKzMzcTsT9aiX47T-XtrwNgP48LF8jSBRKG-LVFcBrdjDWOC0i7JzF5U4w",
       "links": [],
-      "views": "395",
+      "views": "399",
       "url": "https://t.me/FirstonOzon/1370"
     },
     {
@@ -264,7 +278,7 @@
       ],
       "video_thumb": null,
       "links": [],
-      "views": "358",
+      "views": "360",
       "url": "https://t.me/FirstonOzon/1369"
     },
     {
@@ -297,25 +311,6 @@
       "links": [],
       "views": "295",
       "url": "https://t.me/FirstonOzon/1367"
-    },
-    {
-      "id": "59e4f021",
-      "post_id": "1366",
-      "text": "Познавательный видос зашел на Ютуб немного лучше чем любая из серий сериала.Теперь попробуем познавательный мультик -https://www.youtube.com/shorts/t2qKnCkzS6s",
-      "text_html": "<div>Познавательный видос зашел на Ютуб немного лучше чем любая из серий сериала. <br/><br/>Теперь попробуем познавательный мультик -<br/><a href=\"https://www.youtube.com/shorts/t2qKnCkzS6s\" rel=\"noopener noreferrer\" target=\"_blank\">https://www.youtube.com/shorts/t2qKnCkzS6s</a></div>",
-      "date": "2025-12-28T07:36:56+00:00",
-      "images": [
-        "https://cdn4.telesco.pe/file/m2TSbtyAg2VWmLt6-KOydLJH1PasSalKOa7hu88EnnhkKklrCct8jPG8cXGfnT5qNdMtQtjbBh_r9ZGpsVvgv-r4k0TttehIt2bpV2Yw5hiIRw8ONrxUGVR0jOZ8VcX8kpD3MemHzlVXf7iGss_YcACA6DBbk7Nyu8kKfoZaVKsoJ0ovq3wo_4jizuMOBCc4p06aixICrUeYSDAwulPf4i3y3jtvnOGo-RTdBbLMaAK4wXOc-bkmST01Z3l75Y5vibVOUI99cwToe2xpTbEbFom35SuAqzf3ecloK-pKpQ4ABn1nxJkeeF8z_OvsS6N0yNHEzo4NMz6XqM2KyDafsg.jpg"
-      ],
-      "video_thumb": null,
-      "links": [
-        {
-          "url": "https://www.youtube.com/shorts/t2qKnCkzS6s",
-          "text": "https://www.youtube.com/shorts/t2qKnCkzS6s"
-        }
-      ],
-      "views": "278",
-      "url": "https://t.me/FirstonOzon/1366"
     }
   ]
 }
