@@ -1,7 +1,7 @@
 {
   "channel": "FirstonOzon",
   "channel_url": "https://t.me/FirstonOzon",
-  "updated": "2026-02-06T12:00:02.689528Z",
+  "updated": "2026-02-06T13:00:02.291076Z",
   "count": 20,
   "posts": [
     {
@@ -15,7 +15,7 @@
       ],
       "video_thumb": null,
       "links": [],
-      "views": "132",
+      "views": "134",
       "url": "https://t.me/FirstonOzon/1391"
     },
     {
@@ -27,7 +27,7 @@
       "images": [],
       "video_thumb": null,
       "links": [],
-      "views": "164",
+      "views": "165",
       "url": "https://t.me/FirstonOzon/1389"
     },
     {
@@ -39,7 +39,7 @@
       "images": [],
       "video_thumb": null,
       "links": [],
-      "views": "166",
+      "views": "167",
       "url": "https://t.me/FirstonOzon/1388"
     },
     {
@@ -49,11 +49,11 @@
       "text_html": "<div><b>Мир изменился. Вы заметили?<br/></b><br/>Хочу поделиться двумя историями, которые меня зацепили.<br/><br/><br/><b>## История первая: «Мой ИИ всё забывал»<br/></b><br/>Bhanu Teja — основатель SiteGPT, сервиса чат-ботов для бизнеса. Человек, который работает с ИИ каждый день.<br/><br/>И вот что его бесило:<br/><br/><i>«Каждый разговор с ИИ начинался с нуля. Контекст вчерашнего дня? Исчез. Исследование прошлой недели? Потеряно в чатах.»<br/></i><br/>Знакомо?<br/><br/>Я сам ловил себя на мысли: объясняю ИИ одно и то же в десятый раз. Как будто разговариваю с человеком, у которого амнезия.<br/><br/><b>Что сделал Bhanu?<br/></b><br/>Он взял open-source платформу OpenClaw и построил «Mission Control» — систему из 10 ИИ-агентов, которые работают как настоящая команда:<br/><br/>- Один агент пишет код<br/>- Другой исследует конкурентов<br/>- Третий проверяет качество<br/>- Четвёртый общается с клиентами<br/><br/>Каждый помнит свои задачи. Каждый продолжает с того места, где остановился. Они видят работу друг друга и координируются автоматически.<br/><br/><br/><b>## История вторая: «14 сотрудников, ноль зарплат»<br/></b><br/>Адам Холт — предприниматель из Новой Зеландии. Управляет <b>шестью компаниями</b> одновременно.<br/><br/>Консалтинг. Автоматизация заказов. Аналитика цен. Обучение пилотов дронов. И ещё два бизнеса.<br/><br/>Как он это делает?<br/><br/>У него команда из 14 ИИ-агентов под управлением одного «директора» (модель Opus 4.5).<br/><br/>Когда приходит задача, «директор» решает:<br/>- Простая → делает сам<br/>- Нужен специалист → передаёт нужному агенту<br/>- Сложный проект → разбивает на части и запускает параллельно<br/><br/>Адам пишет :<i> «Работа, которая раньше стоила $100-200K консалтинга, теперь делается за день.»</i><br/><br/>Звучит как фантастика. Но это уже реальность!<br/><br/><br/><b>## Что общего между этими историями?<br/></b><br/>Оба предпринимателя столкнулись с одной проблемой:<br/><br/><b>ИИ как инструмент — это потолок.</b><br/><br/>Спросил → получил ответ → забыл. Этого недостаточно для реального бизнеса.<br/><br/>Бизнес — это десятки процессов, которые происходят одновременно. Данные, люди, задачи, сроки, риски.<br/><br/>Один ИИ-ассистент не может удержать эту сложность.<br/><br/><b>А вот команда ИИ-агентов — может.</b><br/><br/>Мы сейчас в точке перелома.<br/><br/>Вспомните: когда появились смартфоны, многие говорили «мне хватает обычного телефона». Когда появился интернет — «зачем мне это, у меня есть газеты».<br/><br/>История повторяется.<br/><br/>Большинство до сих пор используют ИИ как в 2023 году: как умную поисковую строку.<br/><br/>Но те, кто видит дальше, уже строят системы!<br/><br/><br/><b>## Технология доступна уже сейчас<br/></b><br/>Обе истории построены на OpenClaw — open-source платформе для создания команд ИИ-агентов.<br/><br/>- Бесплатно<br/>- Работает на вашем компьютере или сервере<br/>- Подключается к Telegram, WhatsApp, Discord<br/>- Полный контроль над данными<br/><br/><br/><b>А вы уже думали о том, как интегрировать ИИ-агентов в свои процессы?<br/></b><br/>Напишите в комментариях — интересно услышать ваши мысли.</div>",
       "date": "2026-02-03T13:17:51+00:00",
       "images": [
-        "https://cdn4.telesco.pe/file/Gp9u4Xm8skg-sreZkudYdHK22_a_A9zodb9ucseOvPlPrSqOenFBFzNotIhOkqpgShRIYaeGWsmCd6_GXZH4BwuWMbZ-1iq_YrJbmi7FrIHu3MS_89IyOvZa1WnvhD6c62bb9EKXik8ZafbRN1IHicS2HnSjsKprraHZ2DnoPQm_x6a9m6BAdkZptF2u8PjEM2GLZzbFHv2l7t81RhzBfI0Yt3uldDj9Um8C_2h0pLZi08cUHOHzmGPyzTjOnQvYev37Ec7DUpEBLqP-8NhfiXLdtEn0QXigyrwWbO31O-yhF3Yef7m5z5OXwh7T5fnyW97uawVcAo_rspFA3ai7Nw.jpg"
+        "https://cdn4.telesco.pe/file/dyPx1qwyWvmuotvkIxxXdLZ3vA8MYW34SdUVa-yTMntbWnrWZEN-VTSy0Wxxi5cyucfhM5pEpMMc6iFd8Ec72mSmSS1N9NwQmTjIR_67LpCCdA-fqGlYc9irIbLIHZZFdGbocS_-nJFbXJJhS1rYkW5ITbvRkVy-r2coM7Nhn-KUb_Zu7aAPP49puhjto5z-uFjjGGAFfuxGVcAe3SJTYdPZZtpFUaLizKEeFKEVZts9mNExa5A2oqnIf6khzQBmU0sxddYV4MnkY3yzrVmNAd1G1UpKwhrVkYM8qvpP0L_pP0U_FjibCV0V6kh13WIjOZ720UmGC8MfK_jYb-rQPg.jpg"
       ],
       "video_thumb": null,
       "links": [],
-      "views": "198",
+      "views": "199",
       "url": "https://t.me/FirstonOzon/1387"
     },
     {
@@ -106,7 +106,7 @@
       "text_html": "<div>Согласны?</div>",
       "date": "2026-01-28T14:31:55+00:00",
       "images": [],
-      "video_thumb": "https://cdn4.telesco.pe/file/pEzZCtBBxIeHokS0x1bYAVjyJ_h-jN022h79iIVvrYxlt9xm7eOkcQ529NrQN37Fb24dWYxX9QqcCrB_rOi0Wf3kEExJnHtZEeoXNZn2TT6qr9lwqYFobQpBYKMvjUNbMTzmVc6pdtgl3F0tt23qkzeeS01CIj9buepAMAh9QpvyBfQRHexL4c6pM2EDNOuJDPB2Hth2WtZEC9cPljq-Ty0_Glwjkok9o5bua8p63bURDTRnrZZDh_imvC2ihuvQN8BWYmNz68rbggtCbginAh88iY9gWQy7O5u15OMoH7tFV5cz3VAFy8o1dDNssays_cwpG7M2pDoZZ8KIYnpyNw",
+      "video_thumb": "https://cdn4.telesco.pe/file/Uar4ilagc2WdQ5ujHdjb8evArKBPJPlUZQn06BN1YLs4rbztlcMliUFozTADCyCgqRx2FB8dVRnymwTkeB1AePoupq_2z1u9MG4Z1caUjGMELdxUBUh807U6Z-5LanRySP_BqxefQWTwMlW4cDlvDW2OtjTZDIFD1RHdhnhwyyK0o5SGehzgmRf2HH2JqD1EgqsiYtPqTa0H1_OvvSLS-OkJa2ndstivPLNHH3v0m3gaVJj6slCM4VbJdrqng8CpCNYkWLVTSUDJjcozOK9IbuTwK9D9KFb_bvi7NhjdT81C9rqaXBMsjuCziEL_0lUEVU-VzcZZI1UiCp1_ydPNFQ",
       "links": [],
       "views": "316",
       "url": "https://t.me/FirstonOzon/1383"
